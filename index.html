@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CPh Operations Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#f97316', // Orange 500
+              secondary: '#451a03', // Amber 950
+              accent: '#fbbf24', // Amber 400
+              success: '#16a34a',
+              warning: '#d97706',
+              danger: '#dc2626',
+              'gov-bg': '#fff7ed',
+              'slate-800': '#451a03',
+              'slate-900': '#290b00',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* --- VIVID ALERT SYSTEM STYLES --- */
+      
+      /* Global Sharpening for labels and alerts */
+      .alert-sharp-text {
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 900 !important;
+        letter-spacing: -0.02em;
+      }
+
+      /* Blue Alert (Notes) */
+      .alert-card-blue {
+        border: 1px solid #0000ff !important;
+      }
+      .alert-header-blue {
+        background-color: #0000ff !important;
+        color: #ffffff !important;
+      }
+
+      /* Red Alert (Allergies) */
+      .alert-card-red {
+        border: 1px solid #ff0000 !important;
+      }
+      .alert-header-red {
+        background-color: #ff0000 !important;
+        color: #ffffff !important;
+      }
+
+      /* Yellow Alert (Discrepancies) */
+      .alert-card-yellow {
+        border: 1px solid #eab308 !important; /* Slightly darker yellow for border visibility */
+      }
+      .alert-header-yellow {
+        background-color: #ffff00 !important;
+        color: #000000 !important;
+      }
+      .alert-bg-yellow {
+        background-color: #ffff00 !important;
+        color: #000000 !important;
+      }
+      .alert-border-yellow {
+        border-color: #ffff00 !important;
+      }
+      .alert-box-yellow {
+        background-color: #ffff00 !important;
+        border: 1px solid #eab308 !important;
+        color: #000000 !important;
+      }
+
+      /* Green Alert (Pharmacist Clinical Records) */
+      .alert-card-green {
+        border: 1px solid #16a34a !important;
+      }
+      .alert-header-green {
+        background-color: #16a34a !important;
+        color: #ffffff !important;
+      }
+
+      /* Shared styles for internal highlight boxes */
+      .alert-tag {
+        font-weight: 900 !important;
+        text-transform: uppercase;
+        padding: 0 4px;
+        font-size: 9px;
+      }
+
+      input, textarea, select {
+        border-radius: 0 !important;
+      }
+
+      svg {
+        stroke-width: 2.5px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "recharts": "https://esm.sh/recharts@^3.5.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-orange-50/30 text-slate-900 antialiased">
+    <div id="root"></div>
+  </body>
+</html>

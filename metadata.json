@@ -1,0 +1,7 @@
+{
+  "name": "Community Pharmacy Operations Portal v0.1.0",
+  "description": "A comprehensive IT system for Community Pharmacies (CPh) to manage the Community Pharmacy Programme (CPP) workflow, including patient enrollment, medication dispensing, and government platform integration.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
